@@ -1,0 +1,231 @@
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-Regular.woff2") format("woff2"), url("../fonts/Jost-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-Medium.woff2") format("woff2"), url("../fonts/Jost-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+body {
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Jost", "Arial", sans-serif;
+  color: #000;
+  background: #f9da4b;
+}
+@media (max-width: 767px) {
+  .wrapper {
+    background: #eef1f6;
+  }
+}
+.wrapper main.main {
+  margin: auto;
+}
+@media (max-width: 767px) {
+  .wrapper main.main {
+    padding: 36vw 0 5vw;
+  }
+}
+
+.banner {
+  position: relative;
+  min-height: 45vw;
+  padding: 3.33vw 39.18vw 4.28vw 6.4vw;
+  background: #f9da4b;
+}
+@media (min-aspect-ratio: 21/9) {
+  .banner {
+    max-width: 177vh;
+    min-height: unset;
+    padding: 5.92vh 69.44vh 1.57vh 11vh;
+  }
+}
+@media (max-width: 767px) {
+  .banner {
+    width: 83.7vw;
+    min-height: unset;
+    padding: 21.03vw 3.5vw 10.51vw;
+    -webkit-box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.25);
+    border-radius: 7vw;
+  }
+}
+.banner__content {
+  position: relative;
+  z-index: 1;
+}
+.banner__tag {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 1.4vw;
+  padding: 0.7vw 1.98vw;
+  font: 700 1.82vw/1.2 "Arial", sans-serif;
+  color: #fff;
+  background: #000;
+  border-radius: 1.09vw;
+}
+@media (min-aspect-ratio: 21/9) {
+  .banner__tag {
+    padding: 1.2vh 3.5vh;
+    font-size: 3.24vh;
+    border-radius: 1.944vh;
+  }
+}
+@media (max-width: 767px) {
+  .banner__tag {
+    margin-bottom: 3vw;
+    padding: 2vw 5vw;
+    font-size: 3.3vw;
+    border-radius: 3vw;
+  }
+}
+.banner__title {
+  margin: 0 0 2.6vw;
+  font: 700 3.645vw/1.22 "Arial", sans-serif;
+}
+@media (min-aspect-ratio: 21/9) {
+  .banner__title {
+    margin-bottom: 4.6vh;
+    font-size: 6.48vh;
+  }
+}
+@media (max-width: 767px) {
+  .banner__title {
+    margin-bottom: 4.67vw;
+    font-size: 8.41vw;
+  }
+}
+.banner__descr {
+  max-width: 79.8%;
+  margin-bottom: 3.23vw;
+  font: 400 1.822vw/1.457 "Jost", "Arial", sans-serif;
+}
+@media (min-aspect-ratio: 21/9) {
+  .banner__descr {
+    margin-bottom: 4.9vh;
+    font-size: 3.24vh;
+  }
+}
+@media (max-width: 767px) {
+  .banner__descr {
+    max-width: unset;
+    margin-bottom: 9.81vw;
+    font-size: 4.67vw;
+  }
+}
+.banner__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.6vw;
+}
+@media (min-aspect-ratio: 21/9) {
+  .banner__actions {
+    gap: 3vh;
+  }
+}
+@media (max-width: 767px) {
+  .banner__actions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 3.74vw;
+  }
+}
+.banner__button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 1.54vw 2.34vw;
+  font: 500 1.82vw/1.2 "Jost", "Arial", sans-serif;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 2.19vw;
+}
+@media (min-aspect-ratio: 21/9) {
+  .banner__button {
+    padding: 2.72vh 4.3vh;
+    font-size: 3.2vh;
+    border-radius: 3.88vh;
+  }
+}
+@media (max-width: 767px) {
+  .banner__button {
+    padding: 4.55vw 5vw;
+    font-size: 4.67vw;
+    border-radius: 8.4vw;
+  }
+}
+.banner__button--tg {
+  background: #8332ab;
+}
+.banner__button--wa {
+  background: #3caa3c;
+}
+.banner__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 47.86vw;
+}
+@media (min-aspect-ratio: 21/9) {
+  .banner__img {
+    width: 85vh;
+  }
+}
+@media (max-width: 767px) {
+  .banner__img {
+    top: -30.8vw;
+    right: -7.5vw;
+    width: 79vw;
+  }
+}
+.banner__img img {
+  width: 100%;
+}
